@@ -1,5 +1,3 @@
-# quiz.py
-
 import pathlib
 import random
 from string import ascii_lowercase
@@ -53,7 +51,7 @@ def ask_question(question):
         hint=question.get("hint"),
     )
     if correct := (set(answers) == set(correct_answers)):
-        print("⭐ Correct! ⭐")
+        print("Correct!")
     else:
         is_or_are = " is" if len(correct_answers) == 1 else "s are"
         print("\n- ".join([f"No, the answer{is_or_are}:"] + correct_answers))
