@@ -1,1 +1,1 @@
-# simple_python_reference_projects
+# simple python reference projects
