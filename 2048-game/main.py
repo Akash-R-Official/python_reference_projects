@@ -33,7 +33,7 @@ class Board:
 
     def __init__(self):
         self.window=Tk()
-        self.window.title('ProjectGurukul 2048 Game')
+        self.window.title('2048 Game')
         self.gameArea=Frame(self.window,bg= 'azure3')
         self.board=[]
         self.gridCell=[[0]*4 for i in range(4)]
@@ -191,7 +191,7 @@ class Game:
 
         if(flag==1): #found 2048
             self.won=True
-            messagebox.showinfo('2048', message='You Wonnn!!')
+            messagebox.showinfo('2048', message='You Won!')
             print("won")
             return
 
@@ -203,7 +203,7 @@ class Game:
 
         if not (flag or self.gamepanel.can_merge()):
             self.end=True
-            messagebox.showinfo('2048','Game Over!!!')
+            messagebox.showinfo('2048','Game Over!')
             print("Over")
 
         if self.gamepanel.moved:
