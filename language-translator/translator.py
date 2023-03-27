@@ -4,7 +4,7 @@ import googletrans
 import textblob
 
 window = Tk()
-window.title("DataFlair Language Translator")
+window.title("Language Translator")
 window.minsize(600,500)
 window.maxsize(600,500)
 

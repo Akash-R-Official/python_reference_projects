@@ -3,17 +3,14 @@ import turtle
 import random
 import time
 
-
 #creating turtle screen
 screen = turtle.Screen()
-screen.title('DATAFLAIR-SNAKE GAME')
+screen.title('SNAKE GAME')
 screen.setup(width = 700, height = 700)
 screen.tracer(0)
 turtle.bgcolor('turquoise')
 
-
-
-##creating a border for our game
+#creating a border for our game
 
 turtle.speed(5)
 turtle.pensize(4)
@@ -35,7 +32,6 @@ turtle.hideturtle()
 score = 0
 delay = 0.1
 
-
 #snake
 snake = turtle.Turtle()
 snake.speed(0)
@@ -44,7 +40,6 @@ snake.color("black")
 snake.penup()
 snake.goto(0,0)
 snake.direction = 'stop'
-
 
 #food
 fruit = turtle.Turtle()
@@ -65,8 +60,7 @@ scoring.hideturtle()
 scoring.goto(0,300)
 scoring.write("Score :",align="center",font=("Courier",24,"bold"))
 
-
-#######define how to move
+#define how to move
 def snake_go_up():
     if snake.direction != "down":
         snake.direction = "up"
@@ -111,7 +105,7 @@ screen.onkeypress(snake_go_right, "Right")
 
 while True:
         screen.update()
-            #snake and fruit coliisions
+            #snake and fruit collisions
         if snake.distance(fruit)< 20:
                 x = random.randint(-290,270)
                 y = random.randint(-240,240)
