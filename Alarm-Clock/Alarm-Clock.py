@@ -1,4 +1,4 @@
-#                                        *Welcome to DataFlair Alarm Clock*
+
 
 
 #Importing all the necessary libraries to form the alarm clock:
@@ -27,8 +27,7 @@ def actual_time():
     alarm(set_alarm_timer)
 
 clock = Tk()
-clock.title("DataFlair Alarm Clock")
-clock.iconbitmap(r"dataflair-logo.ico")
+clock.title("Alarm Clock")
 clock.geometry("400x200")
 time_format=Label(clock, text= "Enter time in 24 hour format!", fg="red",bg="black",font="Arial").place(x=60,y=120)
 addTime = Label(clock,text = "Hour  Min   Sec",font=60).place(x = 110)
